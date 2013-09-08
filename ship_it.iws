@@ -4,7 +4,7 @@
     <list default="true" id="9897e636-32e6-4446-9ac6-d1b4c99e18b9" name="Default" comment="" />
     <ignored path="ship_it.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/controllers.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378666555167" ignored="false" />
+    <file path="/controllers.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378667898601" ignored="false" />
     <file path="/a.dummy" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378600947773" ignored="false" />
     <file path="/application.html.ejs" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378600958992" ignored="false" />
     <file path="/students.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1377477281079" ignored="false" />
@@ -102,7 +102,7 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/angular/app/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="35" selection-start="3774" selection-end="3774" vertical-scroll-proportion="2.5">
+            <state line="106" column="9" selection-start="3235" selection-end="3235" vertical-scroll-proportion="0.35950413">
               <folding />
             </state>
           </provider>
@@ -723,7 +723,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angular/app/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="35" selection-start="3774" selection-end="3774" vertical-scroll-proportion="2.5">
+        <state line="106" column="9" selection-start="3235" selection-end="3235" vertical-scroll-proportion="0.35950413">
           <folding />
         </state>
       </provider>

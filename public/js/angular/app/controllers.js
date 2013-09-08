@@ -102,6 +102,10 @@ mainApp.controller('AddressCtrl', ['$scope', '$timeout', function ($scope, $time
 
         _AddressCtrl.map.fitBounds(bounds);
 
+        if (_lineMarker != null) {
+            _lineMarker.setMap(null);
+        }
+
         //
         // Draw line between start and end points
         // if start and end addresses are set.
@@ -112,10 +116,6 @@ mainApp.controller('AddressCtrl', ['$scope', '$timeout', function ($scope, $time
                 _markerStartAddress.value.position,
                 _markerEndAddress.value.position
             ];
-
-            if (_lineMarker != null) {
-                _lineMarker.setMap(null);
-            }
 
             _lineMarker = new google.maps.Polyline({
                 path: markerPath,
@@ -130,7 +130,7 @@ mainApp.controller('AddressCtrl', ['$scope', '$timeout', function ($scope, $time
                 _markerEndAddress.value.position);
 
             $scope.mapDistance = distance.toFixed(2);
-            $scope.apply();
+            $scope.$apply();
         }
     }
 
@@ -152,10 +152,15 @@ mainApp.controller('AddressCtrl', ['$scope', '$timeout', function ($scope, $time
                 }
 
                 markerObj.value = marker;
-                onComplete();
             } else {
+                if (markerObj.value != null) {
+                    markerObj.value.setMap(null);
+                    markerObj.value = null;
+                }
                 console.log("Failed to geocode address: " + status);
             }
+
+            onComplete();
         });
     }
 }]);
