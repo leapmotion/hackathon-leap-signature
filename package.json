@@ -1,0 +1,16 @@
+{
+  "name": "ship_it",
+  "version": "0.0.1-4",
+  "author": "",
+  "dependencies": {
+    "geddy": "0.6.x"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "0.8.x"
+  },
+  "subdomain": "ship_it",
+  "scripts": {
+    "start": "app.js"
+  }
+}

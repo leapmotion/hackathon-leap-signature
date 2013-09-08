@@ -1,0 +1,22 @@
+<!-- Example Row -->
+<div class="col-xs-12 col-md-6">
+<div class="panel panel-default">
+    <div class="panel-heading">
+            <div class="panel-title"><%= params.friendlyName %> | <%= params.school %> | <%= params.degreeAbbrev %>, <%= params.degreeYear %>
+            </div>
+            <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-star"></span> Yes
+             </button>
+
+            <button type="button" class="btn btn-default btn-sm">
+               <span class="glyphicon glyphicon-folder-close"></span> No
+            </button>
+    </div>
+    <div>
+
+      <a class="thumbnail">
+         <img src="<%= params.picUrl %>" alt="<%= params.name %>">
+      </a>
+    </div>
+  </div>
+</div>

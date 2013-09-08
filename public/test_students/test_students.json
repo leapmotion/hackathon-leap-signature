@@ -1,0 +1,1201 @@
+[
+    {
+        "friendlyName": "Annie Smith",
+        "school": "Carnegie Mellon",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2014,
+        "picUrl": "img/students/c6240918409048e8f8944b7392cf143c.jpg",
+        "skills": [
+            "OpenGL"
+        ]
+    },
+    {
+        "friendlyName": "Samantha Kane",
+        "school": "Carnegie Mellon",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2015,
+        "picUrl": "img/students/5a68f6ac5f0f00d7d132dca20d5284b0.jpg",
+        "skills": [
+            "Android",
+            "iOS",
+            "DirectX"
+        ]
+    },
+    {
+        "friendlyName": "Rachel Souter",
+        "school": "Dartmouth",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/14bb9ffb2712b6e3fd5667e62d0a381d.jpg",
+        "skills": [
+            "Growth",
+            "Computer Graphics"
+        ]
+    },
+    {
+        "friendlyName": "Ryan Rudy",
+        "school": "RIT",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2014,
+        "picUrl": "img/students/f3b50435d1118f78679b2c1fc359631a.jpg",
+        "skills": [
+            "Multilingual",
+            "PHP",
+            "DirectX",
+            "Revenue"
+        ]
+    },
+    {
+        "friendlyName": "Ben Wood",
+        "school": "Kansas State",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2014,
+        "picUrl": "img/students/c6240918409048e8f8944b7392cf143c.jpg",
+        "skills": [
+            "Git",
+            "Multilingual",
+            "Business"
+        ]
+    },
+    {
+        "friendlyName": "Hillary Wood",
+        "school": "RIT",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2013,
+        "picUrl": "img/students/14bb9ffb2712b6e3fd5667e62d0a381d.jpg",
+        "skills": [
+            "Multilingual",
+            "OpenGL",
+            "Python",
+            "PHP"
+        ]
+    },
+    {
+        "friendlyName": "Kelly Rudy",
+        "school": "MIT",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2015,
+        "picUrl": "img/students/2070ffd8059148193ac88c3090cd36a1.jpg",
+        "skills": [
+            "Multilingual",
+            "3D",
+            "OpenGL",
+            "Git"
+        ]
+    },
+    {
+        "friendlyName": "Teri Wu",
+        "school": "Kansas State",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2014,
+        "picUrl": "img/students/dd0a074420f957253ab9d14c2525373a.jpg",
+        "skills": [
+            "Actionscript",
+            "VC Funding",
+            "OpenGL",
+            "Git"
+        ]
+    },
+    {
+        "friendlyName": "Tim Phillips",
+        "school": "Stanford",
+        "degreeAbbrev": "SE",
+        "degreeYear": 2013,
+        "picUrl": "img/students/1e46c35c3619e9605da9ae42a4c98187.jpg",
+        "skills": [
+            "RoR",
+            "Business",
+            "Revenue",
+            "Early stage start-ups"
+        ]
+    },
+    {
+        "friendlyName": "Annie Souter",
+        "school": "Kansas State",
+        "degreeAbbrev": "SE",
+        "degreeYear": 2016,
+        "picUrl": "img/students/dbff84ba0d87c381b50b33c31941bcf0.jpg",
+        "skills": [
+            "Actionscript",
+            "OpenGL",
+            "Python",
+            "Android",
+            "C++"
+        ]
+    },
+    {
+        "friendlyName": "Alex Phillips",
+        "school": "Stanford",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2014,
+        "picUrl": "img/students/12a7921d45db7fca735070ffd3f034d1.jpg",
+        "skills": [
+            "OpenGL",
+            "Revenue",
+            "3D"
+        ]
+    },
+    {
+        "friendlyName": "Cathy Phillips",
+        "school": "Berkeley",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2013,
+        "picUrl": "img/students/ae59c4292203b9408c4106ff6c4bdb2a.jpg",
+        "skills": [
+            "C",
+            "Git",
+            "Java",
+            "Revenue"
+        ]
+    },
+    {
+        "friendlyName": "Richard Wu",
+        "school": "Carnegie Mellon",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2016,
+        "picUrl": "img/students/46015ba5edf48b5f229085a89e951065.jpg",
+        "skills": [
+            "VC Funding"
+        ]
+    },
+    {
+        "friendlyName": "Tim Rudy",
+        "school": "RIT",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2013,
+        "picUrl": "img/students/316b37d1ceff65d4a4402c8c20b86379.jpg",
+        "skills": [
+            "Software Development",
+            "Multilingual",
+            "Revenue",
+            "Android"
+        ]
+    },
+    {
+        "friendlyName": "Lauren Souter",
+        "school": "Kansas State",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2017,
+        "picUrl": "img/students/d16628ac25852829ca5cb6963360ab9e.jpg",
+        "skills": [
+            "Actionscript",
+            "3D",
+            "RoR",
+            "C",
+            "Software Development"
+        ]
+    },
+    {
+        "friendlyName": "Alex Wood",
+        "school": "Princeton",
+        "degreeAbbrev": "SE",
+        "degreeYear": 2016,
+        "picUrl": "img/students/3428d426fd88bcf64d858c07f38b07e4.jpg",
+        "skills": [
+            "Java",
+            "RoR"
+        ]
+    },
+    {
+        "friendlyName": "Kelly West",
+        "school": "Yale",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2013,
+        "picUrl": "img/students/316b37d1ceff65d4a4402c8c20b86379.jpg",
+        "skills": [
+            "3D",
+            "DirectX",
+            "C"
+        ]
+    },
+    {
+        "friendlyName": "Samantha Wu",
+        "school": "Princeton",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2014,
+        "picUrl": "img/students/bddfe94a8166f17c29c86f571ecf1df6.jpg",
+        "skills": [
+            "Revenue",
+            "VC Funding",
+            "iOS",
+            "Computer Graphics",
+            "Python"
+        ]
+    },
+    {
+        "friendlyName": "Steve Kowalski",
+        "school": "Dartmouth",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2017,
+        "picUrl": "img/students/df045a01c12e52f7e80da942e556fefd.jpg",
+        "skills": [
+            "PHP",
+            "Java",
+            "Growth"
+        ]
+    },
+    {
+        "friendlyName": "Steve Kowalski",
+        "school": "Carnegie Mellon",
+        "degreeAbbrev": "SE",
+        "degreeYear": 2015,
+        "picUrl": "img/students/dbff84ba0d87c381b50b33c31941bcf0.jpg",
+        "skills": [
+            "DirectX",
+            "VC Funding",
+            "Actionscript",
+            "Git"
+        ]
+    },
+    {
+        "friendlyName": "Mike Kane",
+        "school": "UCSD",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2016,
+        "picUrl": "img/students/06730120effc62b260d7ae7679632856.jpg",
+        "skills": [
+            "DirectX"
+        ]
+    },
+    {
+        "friendlyName": "Joe Wu",
+        "school": "Dartmouth",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2015,
+        "picUrl": "img/students/12c5b82d6acbbe3416f89db0d157db8a.jpg",
+        "skills": [
+            "Business",
+            "PHP"
+        ]
+    },
+    {
+        "friendlyName": "Todd Wood",
+        "school": "Harvard",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2014,
+        "picUrl": "img/students/6415d5351e8311f1ea3099544d3de45d.jpg",
+        "skills": [
+            "Computer Graphics",
+            "Java",
+            "Growth",
+            "C",
+            "iOS"
+        ]
+    },
+    {
+        "friendlyName": "Ben Smith",
+        "school": "Kansas State",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2014,
+        "picUrl": "img/students/9b4234bc7fb6751edeb0e6ddf1ad9f4c.jpg",
+        "skills": [
+            "Python",
+            "iOS"
+        ]
+    },
+    {
+        "friendlyName": "Cory West",
+        "school": "Kansas State",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2014,
+        "picUrl": "img/students/d3317d3640ac86b2d1a2998dd1be5af8.jpg",
+        "skills": [
+            "C",
+            "Git",
+            "OpenGL",
+            "3D"
+        ]
+    },
+    {
+        "friendlyName": "Hilda Ryder",
+        "school": "Ohio State",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2013,
+        "picUrl": "img/students/ae59c4292203b9408c4106ff6c4bdb2a.jpg",
+        "skills": [
+            "RoR",
+            "Python",
+            "Java",
+            "C++"
+        ]
+    },
+    {
+        "friendlyName": "Alex Anderson",
+        "school": "Kansas State",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2013,
+        "picUrl": "img/students/3ded17d00bf18fa7e4809c61648e2ed4.jpg",
+        "skills": [
+            "Android",
+            "C",
+            "OpenGL",
+            "Early stage start-ups",
+            "Actionscript"
+        ]
+    },
+    {
+        "friendlyName": "Michelle Phillips",
+        "school": "Ohio State",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2016,
+        "picUrl": "img/students/c6240918409048e8f8944b7392cf143c.jpg",
+        "skills": [
+            "PHP",
+            "Software Development",
+            "Java"
+        ]
+    },
+    {
+        "friendlyName": "Sean Brookstone",
+        "school": "Carnegie Mellon",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2014,
+        "picUrl": "img/students/251f4633e311b37bbfed6f4e77522411.jpg",
+        "skills": [
+            "C++",
+            "Mobile",
+            "Actionscript",
+            "Python"
+        ]
+    },
+    {
+        "friendlyName": "Annie Dexter",
+        "school": "Dartmouth",
+        "degreeAbbrev": "SE",
+        "degreeYear": 2016,
+        "picUrl": "img/students/7e4ebd6c1516c08590e0de777131ba9b.jpg",
+        "skills": [
+            "Android"
+        ]
+    },
+    {
+        "friendlyName": "Hillary Smith",
+        "school": "Georgia Tech",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2016,
+        "picUrl": "img/students/dd0a074420f957253ab9d14c2525373a.jpg",
+        "skills": [
+            "Business",
+            "Git"
+        ]
+    },
+    {
+        "friendlyName": "Teri West",
+        "school": "Cal Poly",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/27c30de5e7674ccbf41c1358cf25640e.jpg",
+        "skills": [
+            "Actionscript",
+            "iOS"
+        ]
+    },
+    {
+        "friendlyName": "Michelle Anderson",
+        "school": "Georgia Tech",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2015,
+        "picUrl": "img/students/5aab4aa815d8688edc048d90558741fc.jpg",
+        "skills": [
+            "PHP",
+            "Revenue",
+            "VC Funding"
+        ]
+    },
+    {
+        "friendlyName": "Richard Brookstone",
+        "school": "Carnegie Mellon",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2013,
+        "picUrl": "img/students/ae59c4292203b9408c4106ff6c4bdb2a.jpg",
+        "skills": [
+            "OpenGL"
+        ]
+    },
+    {
+        "friendlyName": "Cathy Souter",
+        "school": "Stanford",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2016,
+        "picUrl": "img/students/3428d426fd88bcf64d858c07f38b07e4.jpg",
+        "skills": [
+            "3D",
+            "RoR",
+            "Business"
+        ]
+    },
+    {
+        "friendlyName": "Cory Ryder",
+        "school": "Georgia Tech",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2014,
+        "picUrl": "img/students/12a7921d45db7fca735070ffd3f034d1.jpg",
+        "skills": [
+            "iOS"
+        ]
+    },
+    {
+        "friendlyName": "Sean Smith",
+        "school": "Harvard",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/dbff84ba0d87c381b50b33c31941bcf0.jpg",
+        "skills": [
+            "Computer Graphics"
+        ]
+    },
+    {
+        "friendlyName": "Ted West",
+        "school": "RIT",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2017,
+        "picUrl": "img/students/449a4f63a13797cef6c47bb731bb86ef.jpg",
+        "skills": [
+            "Multilingual",
+            "Software Development"
+        ]
+    },
+    {
+        "friendlyName": "Tim Souter",
+        "school": "MIT",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2013,
+        "picUrl": "img/students/06eb85e0a7f7c9618ad131830db85abe.jpg",
+        "skills": [
+            "Growth",
+            "Revenue",
+            "RoR",
+            "OpenGL"
+        ]
+    },
+    {
+        "friendlyName": "Sean Ryder",
+        "school": "UCSD",
+        "degreeAbbrev": "SE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/27c30de5e7674ccbf41c1358cf25640e.jpg",
+        "skills": [
+            "C++",
+            "OpenGL",
+            "iOS",
+            "DirectX"
+        ]
+    },
+    {
+        "friendlyName": "Teri Dexter",
+        "school": "Dartmouth",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2015,
+        "picUrl": "img/students/3428d426fd88bcf64d858c07f38b07e4.jpg",
+        "skills": [
+            "DirectX"
+        ]
+    },
+    {
+        "friendlyName": "Steve Kane",
+        "school": "Harvard",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2017,
+        "picUrl": "img/students/ae59c4292203b9408c4106ff6c4bdb2a.jpg",
+        "skills": [
+            "Revenue",
+            "Android"
+        ]
+    },
+    {
+        "friendlyName": "Teri Templeton",
+        "school": "Kansas State",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2015,
+        "picUrl": "img/students/1bc31ecc6ff49e1c6a92004060e7e30c.jpg",
+        "skills": [
+            "Early stage start-ups",
+            "DirectX"
+        ]
+    },
+    {
+        "friendlyName": "Alex Souter",
+        "school": "Yale",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2016,
+        "picUrl": "img/students/12c5b82d6acbbe3416f89db0d157db8a.jpg",
+        "skills": [
+            "VC Funding",
+            "Computer Graphics",
+            "Android"
+        ]
+    },
+    {
+        "friendlyName": "Annie Souter",
+        "school": "Ohio State",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/fbe3642a62728a037c9c7d85cfa3799a.jpg",
+        "skills": [
+            "Early stage start-ups",
+            "iOS",
+            "Business"
+        ]
+    },
+    {
+        "friendlyName": "Teri Janis",
+        "school": "Cal Poly",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2017,
+        "picUrl": "img/students/fbe3642a62728a037c9c7d85cfa3799a.jpg",
+        "skills": [
+            "RoR",
+            "Multilingual",
+            "PHP"
+        ]
+    },
+    {
+        "friendlyName": "Kelly Wood",
+        "school": "MIT",
+        "degreeAbbrev": "SE",
+        "degreeYear": 2015,
+        "picUrl": "img/students/bddfe94a8166f17c29c86f571ecf1df6.jpg",
+        "skills": [
+            "Business"
+        ]
+    },
+    {
+        "friendlyName": "Ben Janis",
+        "school": "Cal Poly",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2013,
+        "picUrl": "img/students/c791946e18707f560abdde82d74506c4.jpg",
+        "skills": [
+            "Computer Graphics"
+        ]
+    },
+    {
+        "friendlyName": "Jen Janis",
+        "school": "UCSD",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2017,
+        "picUrl": "img/students/4652e05d5c424122fdae62ce4f6a4cf1.jpg",
+        "skills": [
+            "C++"
+        ]
+    },
+    {
+        "friendlyName": "Kelly Kane",
+        "school": "UCSD",
+        "degreeAbbrev": "SE",
+        "degreeYear": 2014,
+        "picUrl": "img/students/dd0a074420f957253ab9d14c2525373a.jpg",
+        "skills": [
+            "3D",
+            "Business",
+            "Revenue",
+            "RoR"
+        ]
+    },
+    {
+        "friendlyName": "Hillary Kane",
+        "school": "Dartmouth",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/12a7921d45db7fca735070ffd3f034d1.jpg",
+        "skills": [
+            "Business",
+            "Computer Graphics",
+            "iOS",
+            "VC Funding",
+            "OpenGL"
+        ]
+    },
+    {
+        "friendlyName": "Sean Smith",
+        "school": "Ohio State",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2017,
+        "picUrl": "img/students/12a7921d45db7fca735070ffd3f034d1.jpg",
+        "skills": [
+            "DirectX",
+            "Python",
+            "Revenue",
+            "Multilingual",
+            "Mobile"
+        ]
+    },
+    {
+        "friendlyName": "Lauren Janis",
+        "school": "Yale",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/6415d5351e8311f1ea3099544d3de45d.jpg",
+        "skills": [
+            "PHP",
+            "Revenue",
+            "C++",
+            "Git"
+        ]
+    },
+    {
+        "friendlyName": "Rachel Templeton",
+        "school": "UCSD",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2014,
+        "picUrl": "img/students/06730120effc62b260d7ae7679632856.jpg",
+        "skills": [
+            "OpenGL",
+            "Revenue",
+            "Java",
+            "Python",
+            "Growth"
+        ]
+    },
+    {
+        "friendlyName": "Richard Smith",
+        "school": "RIT",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2015,
+        "picUrl": "img/students/27c30de5e7674ccbf41c1358cf25640e.jpg",
+        "skills": [
+            "VC Funding"
+        ]
+    },
+    {
+        "friendlyName": "Cory Wood",
+        "school": "RIT",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/5a68f6ac5f0f00d7d132dca20d5284b0.jpg",
+        "skills": [
+            "Java",
+            "Early stage start-ups",
+            "OpenGL"
+        ]
+    },
+    {
+        "friendlyName": "Samantha Welch",
+        "school": "Princeton",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2015,
+        "picUrl": "img/students/0b68fe8a46c1fcb6edd37e860ba872d0.jpg",
+        "skills": [
+            "iOS",
+            "3D",
+            "Java",
+            "Android"
+        ]
+    },
+    {
+        "friendlyName": "Cathy Templeton",
+        "school": "Stanford",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2013,
+        "picUrl": "img/students/c6240918409048e8f8944b7392cf143c.jpg",
+        "skills": [
+            "Git",
+            "Actionscript",
+            "Early stage start-ups",
+            "Revenue"
+        ]
+    },
+    {
+        "friendlyName": "Ashley Templeton",
+        "school": "Yale",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2014,
+        "picUrl": "img/students/d0e11d0cc0e7490eea112e4f073e4aad.jpg",
+        "skills": [
+            "Business"
+        ]
+    },
+    {
+        "friendlyName": "Joe Kowalski",
+        "school": "Ohio State",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2013,
+        "picUrl": "img/students/5aab4aa815d8688edc048d90558741fc.jpg",
+        "skills": [
+            "Multilingual",
+            "3D",
+            "Git"
+        ]
+    },
+    {
+        "friendlyName": "Ben West",
+        "school": "UCSD",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2013,
+        "picUrl": "img/students/dd0a074420f957253ab9d14c2525373a.jpg",
+        "skills": [
+            "PHP",
+            "Early stage start-ups",
+            "Mobile",
+            "RoR"
+        ]
+    },
+    {
+        "friendlyName": "Michelle Janis",
+        "school": "MIT",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2015,
+        "picUrl": "img/students/7e4ebd6c1516c08590e0de777131ba9b.jpg",
+        "skills": [
+            "Business",
+            "Multilingual",
+            "Computer Graphics",
+            "iOS"
+        ]
+    },
+    {
+        "friendlyName": "Jen Anderson",
+        "school": "Ohio State",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2016,
+        "picUrl": "img/students/d0e11d0cc0e7490eea112e4f073e4aad.jpg",
+        "skills": [
+            "Git",
+            "C++",
+            "Early stage start-ups"
+        ]
+    },
+    {
+        "friendlyName": "Joe Souter",
+        "school": "Kansas State",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/2070ffd8059148193ac88c3090cd36a1.jpg",
+        "skills": [
+            "Git",
+            "VC Funding",
+            "Computer Graphics",
+            "Revenue"
+        ]
+    },
+    {
+        "friendlyName": "Lauren Brookstone",
+        "school": "Carnegie Mellon",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2017,
+        "picUrl": "img/students/fbe3642a62728a037c9c7d85cfa3799a.jpg",
+        "skills": [
+            "Growth",
+            "OpenGL",
+            "Git",
+            "Business"
+        ]
+    },
+    {
+        "friendlyName": "Tim Brookstone",
+        "school": "Kansas State",
+        "degreeAbbrev": "SE",
+        "degreeYear": 2015,
+        "picUrl": "img/students/bddfe94a8166f17c29c86f571ecf1df6.jpg",
+        "skills": [
+            "PHP",
+            "Revenue",
+            "3D",
+            "Mobile",
+            "Multilingual"
+        ]
+    },
+    {
+        "friendlyName": "Hilda Templeton",
+        "school": "Cornell",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2013,
+        "picUrl": "img/students/df045a01c12e52f7e80da942e556fefd.jpg",
+        "skills": [
+            "VC Funding",
+            "Java",
+            "Multilingual"
+        ]
+    },
+    {
+        "friendlyName": "Tim Brookstone",
+        "school": "Princeton",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2015,
+        "picUrl": "img/students/6415d5351e8311f1ea3099544d3de45d.jpg",
+        "skills": [
+            "Multilingual",
+            "C",
+            "Business"
+        ]
+    },
+    {
+        "friendlyName": "Richard Ryder",
+        "school": "Ohio State",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2016,
+        "picUrl": "img/students/6415d5351e8311f1ea3099544d3de45d.jpg",
+        "skills": [
+            "Actionscript",
+            "C"
+        ]
+    },
+    {
+        "friendlyName": "Annie Welch",
+        "school": "Dartmouth",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2014,
+        "picUrl": "img/students/12c5b82d6acbbe3416f89db0d157db8a.jpg",
+        "skills": [
+            "RoR",
+            "PHP"
+        ]
+    },
+    {
+        "friendlyName": "Michelle Welch",
+        "school": "Princeton",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2015,
+        "picUrl": "img/students/3428d426fd88bcf64d858c07f38b07e4.jpg",
+        "skills": [
+            "3D",
+            "iOS"
+        ]
+    },
+    {
+        "friendlyName": "Richard Kowalski",
+        "school": "UCSD",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2017,
+        "picUrl": "img/students/c6240918409048e8f8944b7392cf143c.jpg",
+        "skills": [
+            "VC Funding"
+        ]
+    },
+    {
+        "friendlyName": "Jen Anderson",
+        "school": "Ohio State",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2013,
+        "picUrl": "img/students/251f4633e311b37bbfed6f4e77522411.jpg",
+        "skills": [
+            "Mobile",
+            "Git",
+            "Revenue",
+            "Python"
+        ]
+    },
+    {
+        "friendlyName": "John Kane",
+        "school": "Stanford",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2014,
+        "picUrl": "img/students/251f4633e311b37bbfed6f4e77522411.jpg",
+        "skills": [
+            "PHP",
+            "Android",
+            "VC Funding",
+            "Early stage start-ups"
+        ]
+    },
+    {
+        "friendlyName": "John Welch",
+        "school": "RIT",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2016,
+        "picUrl": "img/students/ae59c4292203b9408c4106ff6c4bdb2a.jpg",
+        "skills": [
+            "RoR",
+            "Git"
+        ]
+    },
+    {
+        "friendlyName": "Samantha Kane",
+        "school": "UCSD",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2013,
+        "picUrl": "img/students/06eb85e0a7f7c9618ad131830db85abe.jpg",
+        "skills": [
+            "C++"
+        ]
+    },
+    {
+        "friendlyName": "Samantha Smith",
+        "school": "Kansas State",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2015,
+        "picUrl": "img/students/20595f4da803659dd27223f606fd83c9.jpg",
+        "skills": [
+            "RoR"
+        ]
+    },
+    {
+        "friendlyName": "Alex Phillips",
+        "school": "Berkeley",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2016,
+        "picUrl": "img/students/c791946e18707f560abdde82d74506c4.jpg",
+        "skills": [
+            "Mobile",
+            "C++",
+            "Git",
+            "Revenue"
+        ]
+    },
+    {
+        "friendlyName": "Michelle Phillips",
+        "school": "Ohio State",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2014,
+        "picUrl": "img/students/3428d426fd88bcf64d858c07f38b07e4.jpg",
+        "skills": [
+            "Java",
+            "Software Development"
+        ]
+    },
+    {
+        "friendlyName": "Michelle Welch",
+        "school": "Stanford",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2017,
+        "picUrl": "img/students/251f4633e311b37bbfed6f4e77522411.jpg",
+        "skills": [
+            "DirectX"
+        ]
+    },
+    {
+        "friendlyName": "Ryan Templeton",
+        "school": "Cornell",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2016,
+        "picUrl": "img/students/3d4a15216459359e0b836da6391f08a6.jpg",
+        "skills": [
+            "Mobile"
+        ]
+    },
+    {
+        "friendlyName": "Cathy Janis",
+        "school": "Ohio State",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2014,
+        "picUrl": "img/students/dbff84ba0d87c381b50b33c31941bcf0.jpg",
+        "skills": [
+            "Android",
+            "OpenGL",
+            "3D",
+            "Java"
+        ]
+    },
+    {
+        "friendlyName": "John Michaels",
+        "school": "UCSD",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2013,
+        "picUrl": "img/students/14bb9ffb2712b6e3fd5667e62d0a381d.jpg",
+        "skills": [
+            "DirectX",
+            "Python"
+        ]
+    },
+    {
+        "friendlyName": "Hilda Wu",
+        "school": "Harvard",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2014,
+        "picUrl": "img/students/dd0a074420f957253ab9d14c2525373a.jpg",
+        "skills": [
+            "Python",
+            "Early stage start-ups",
+            "Java",
+            "Git",
+            "VC Funding"
+        ]
+    },
+    {
+        "friendlyName": "Joe Rudy",
+        "school": "UCSD",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2013,
+        "picUrl": "img/students/dd0a074420f957253ab9d14c2525373a.jpg",
+        "skills": [
+            "PHP",
+            "Python",
+            "Actionscript",
+            "Computer Graphics"
+        ]
+    },
+    {
+        "friendlyName": "Paul Dexter",
+        "school": "UCSD",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2017,
+        "picUrl": "img/students/27c30de5e7674ccbf41c1358cf25640e.jpg",
+        "skills": [
+            "Business",
+            "3D",
+            "Actionscript",
+            "Early stage start-ups"
+        ]
+    },
+    {
+        "friendlyName": "Teri West",
+        "school": "Princeton",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2014,
+        "picUrl": "img/students/3d4a15216459359e0b836da6391f08a6.jpg",
+        "skills": [
+            "Business",
+            "Growth"
+        ]
+    },
+    {
+        "friendlyName": "Paul Rudy",
+        "school": "Harvard",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2016,
+        "picUrl": "img/students/20595f4da803659dd27223f606fd83c9.jpg",
+        "skills": [
+            "VC Funding",
+            "3D",
+            "C",
+            "Java"
+        ]
+    },
+    {
+        "friendlyName": "Ashley Smith",
+        "school": "Dartmouth",
+        "degreeAbbrev": "CE",
+        "degreeYear": 2014,
+        "picUrl": "img/students/14aadd7bd798bee1d58715025a9677c9.jpg",
+        "skills": [
+            "C++",
+            "Growth"
+        ]
+    },
+    {
+        "friendlyName": "Ashley West",
+        "school": "Dartmouth",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2014,
+        "picUrl": "img/students/72fbca19059b2b9a12cff1018c613e07.jpg",
+        "skills": [
+            "Python",
+            "3D",
+            "iOS"
+        ]
+    },
+    {
+        "friendlyName": "Tim Anderson",
+        "school": "Berkeley",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2017,
+        "picUrl": "img/students/1e46c35c3619e9605da9ae42a4c98187.jpg",
+        "skills": [
+            "Java"
+        ]
+    },
+    {
+        "friendlyName": "Ted Lawson",
+        "school": "Carnegie Mellon",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2016,
+        "picUrl": "img/students/3d4a15216459359e0b836da6391f08a6.jpg",
+        "skills": [
+            "Multilingual",
+            "DirectX",
+            "C"
+        ]
+    },
+    {
+        "friendlyName": "Mike Dexter",
+        "school": "Stanford",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2013,
+        "picUrl": "img/students/df045a01c12e52f7e80da942e556fefd.jpg",
+        "skills": [
+            "Multilingual"
+        ]
+    },
+    {
+        "friendlyName": "Joe Kane",
+        "school": "RIT",
+        "degreeAbbrev": "MSEE",
+        "degreeYear": 2013,
+        "picUrl": "img/students/c791946e18707f560abdde82d74506c4.jpg",
+        "skills": [
+            "PHP",
+            "C",
+            "OpenGL",
+            "Java",
+            "Mobile"
+        ]
+    },
+    {
+        "friendlyName": "Ashley Dexter",
+        "school": "MIT",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2014,
+        "picUrl": "img/students/df045a01c12e52f7e80da942e556fefd.jpg",
+        "skills": [
+            "Actionscript",
+            "RoR"
+        ]
+    },
+    {
+        "friendlyName": "Michelle Lawson",
+        "school": "Georgia Tech",
+        "degreeAbbrev": "MFA",
+        "degreeYear": 2013,
+        "picUrl": "img/students/27c30de5e7674ccbf41c1358cf25640e.jpg",
+        "skills": [
+            "Actionscript",
+            "C",
+            "Computer Graphics",
+            "Software Development"
+        ]
+    },
+    {
+        "friendlyName": "Ted Kane",
+        "school": "Dartmouth",
+        "degreeAbbrev": "PhD",
+        "degreeYear": 2014,
+        "picUrl": "img/students/27c30de5e7674ccbf41c1358cf25640e.jpg",
+        "skills": [
+            "Growth",
+            "3D",
+            "Python",
+            "DirectX",
+            "Multilingual"
+        ]
+    },
+    {
+        "friendlyName": "John Kane",
+        "school": "Carnegie Mellon",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2017,
+        "picUrl": "img/students/1bc31ecc6ff49e1c6a92004060e7e30c.jpg",
+        "skills": [
+            "Android",
+            "VC Funding",
+            "Software Development",
+            "Git"
+        ]
+    },
+    {
+        "friendlyName": "Lauren Michaels",
+        "school": "Princeton",
+        "degreeAbbrev": "MBA",
+        "degreeYear": 2017,
+        "picUrl": "img/students/35996ff6bd9a9e25304d4ab285002699.jpg",
+        "skills": [
+            "Java",
+            "Multilingual",
+            "Git",
+            "Early stage start-ups"
+        ]
+    },
+    {
+        "friendlyName": "Todd Anderson",
+        "school": "UCSD",
+        "degreeAbbrev": "CS",
+        "degreeYear": 2016,
+        "picUrl": "img/students/316b37d1ceff65d4a4402c8c20b86379.jpg",
+        "skills": [
+            "VC Funding",
+            "Android",
+            "PHP",
+            "DirectX",
+            "Actionscript"
+        ]
+    }
+]
