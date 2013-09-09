@@ -84,19 +84,10 @@
       <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="329" selection-end="329" vertical-scroll-proportion="0.26859504">
+            <state line="10" column="7" selection-start="293" selection-end="293" vertical-scroll-proportion="0.20661157">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="15" selection-start="234" selection-end="234" vertical-scroll-proportion="-8.125">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -415,14 +406,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="234" selection-end="234" vertical-scroll-proportion="-8.125">
+        <state line="13" column="15" selection-start="234" selection-end="234" vertical-scroll-proportion="0.2777778">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="329" selection-end="329" vertical-scroll-proportion="0.26859504">
+        <state line="10" column="7" selection-start="293" selection-end="293" vertical-scroll-proportion="0.20661157">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
