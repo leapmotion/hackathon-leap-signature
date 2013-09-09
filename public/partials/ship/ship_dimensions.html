@@ -1,0 +1,99 @@
+
+<div ng-controller="ShipDimensionsCtrl">
+
+    <div class="animated fadeInLeftBig">
+        <h4 class="action-subheader-text">Enter your package's dimensions:</h4>
+    </div>
+
+    <div class="animated bounceInRight">
+
+        <div class="container">
+            <form class="form-address">
+                <br>
+                <!-- Slider control -->
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        Length:
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        <input type="range" ng-model="valueLength" ng-change="onSliderChanged(this)" min="1" max="60" step="1" style="width: 100%" class="ng-valid ng-dirty">
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        {{valueLength}} (in.)
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Slider control -->
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        Width:
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        <input type="range" ng-model="valueWidth" ng-change="onSliderChanged(this)" min="1" max="60" step="1" style="width: 100%" class="ng-valid ng-dirty">
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        {{valueWidth}} (in.)
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Slider control -->
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        Height:
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        <input type="range" ng-model="valueHeight" ng-change="onSliderChanged(this)" min="1" max="60" step="1" style="width: 100%" class="ng-valid ng-dirty">
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        {{valueHeight}} (in.)
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Slider control -->
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        Weight:
+                    </div>
+                    <div class="col-xs-8 col-md-8">
+                        <input type="range" ng-model="valueWeight" ng-change="onSliderChanged(this)" min="1" max="100" step="1" style="width: 100%" class="ng-valid ng-dirty">
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        {{valueWeight}} (lbs.)
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <h4 class="action-subheader-text">Best Rate:</h4>
+                <div class="panel panel-success">
+                    <div class="panel-body">
+                        <h4 class="ship-best-price">{{valueBestPrice}}</h4>
+                    </div>
+                    <div class="panel-footer ship-best-service">{{valueBestService}}</div>
+                </div>
+
+                <br>
+
+                <!-- Page buttons -->
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        <button class="btn btn-lg btn-block btn-default" type="submit" link-click="/ship">< Back to Address</button>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <button class="btn btn-lg btn-primary btn-block btn-success" type="submit" link-click="/ship/label">Ship it!</button>
+                    </div>
+                </div>
+
+            </form>
+        </div> <!-- /container -->
+
+    </div>
+
+</div>

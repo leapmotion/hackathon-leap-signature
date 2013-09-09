@@ -4,11 +4,17 @@
 //
 var express = require('express');
 var app = express();
+var epw = require('./node/endpoints/easypost_wrapper');
+
 app.configure(function () {
     app.use(express.static(__dirname + '/public'));
-    app.get('/', function(req, res) {
-        res.render('app/index.html');
-    });
+    app.use(express.bodyParser());
+    app.use(express.methodOverride());
+    app.use(app.router);
+
+    // Routes
+    app.post('/ep_create_address', epw.createAddress);
+    app.post('/ep_query_rates', epw.queryRates);
 });
 app.listen(3000);
 console.log("Server running on: http://localhost:3000/");

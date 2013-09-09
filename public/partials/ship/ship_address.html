@@ -1,0 +1,24 @@
+<div ng-controller="ShipAddressCtrl">
+
+    <div class="animated fadeInLeftBig">
+        <h4 class="action-subheader-text">Choose your package's destination:</h4>
+    </div>
+
+
+    <div class="animated bounceInRight">
+        <br>
+        <div class="google-map" init-google-map="" latitude="37.7704582" longitude="-122.4041068"></div>
+
+        <div class="container">
+            <form class="form-address">
+                <div>Shipping Distance: {{mapDistance}} (m)</div>
+                <input type="text" class="form-control" ng-model="startAddress" ng-change="onStartAddressChange()" placeholder="Start Address" autofocus>
+                <input type="text" class="form-control" ng-model="endAddress" ng-change="onEndAddressChange()" placeholder="End Address">
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" link-click="/ship/dimensions">Set Package Size ></button>
+            </form>
+        </div> <!-- /container -->
+
+    </div>
+
+</div>

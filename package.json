@@ -3,7 +3,8 @@
   "version": "0.0.1-4",
   "author": "",
   "dependencies": {
-      "express": "x.x.x"
+      "express": "x.x.x",
+      "node-easypost": "x.x.x"
   },
   "devDependencies": {},
   "engines": {

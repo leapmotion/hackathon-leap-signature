@@ -21,6 +21,16 @@ body {
     color: #000000;
 }
 
+.ship-best-price {
+    color: #49a665;
+    text-align: center;
+    font-size: 40px;
+}
+
+.ship-best-service {
+    text-align: center;
+}
+
 .footer-text {
     color: #45a6a3;
 }
