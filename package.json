@@ -3,7 +3,7 @@
   "version": "0.0.1-4",
   "author": "",
   "dependencies": {
-    "geddy": "0.6.x"
+      "express": "x.x.x"
   },
   "devDependencies": {},
   "engines": {
@@ -11,6 +11,6 @@
   },
   "subdomain": "ship_it",
   "scripts": {
-    "start": "app.js"
+    "start": "server.js"
   }
 }
