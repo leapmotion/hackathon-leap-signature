@@ -13,7 +13,6 @@ app.configure(function () {
     app.use(app.router);
 
     // Routes
-    app.post('/ep_create_address', epw.createAddress);
     app.post('/ep_query_rates', epw.queryRates);
 });
 app.listen(3000);

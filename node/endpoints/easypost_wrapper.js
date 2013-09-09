@@ -7,114 +7,203 @@
 //
 var apiKey = 'Lb1QloAac_RMyQlpG0N1Bw';
 var easypost = require('../../node_modules/node-easypost/lib/main.js')(apiKey);
+var async = require('async');
 
-// Create address given from input fields
-exports.createAddress = function (request, response, params) {
-    console.log("Creating addresses....");
-
-    response.format({
-        'application/json': function(){
-            response.send({ message: 'hey' });
-        }
-    });
-};
-
-// Queries the best rates for a given dimension package + address
-exports.queryRates = function (request, response, params) {
-    console.log("Querying best address....");
-
-    response.format({
-        'application/json': function(){
-            response.send({ message: 'hey' });
-        }
-    });
-};
-
-
-// set addresses
-/**
-var toAddress = {
-    name: "Sawyer Bateman",
-    street1: "1A Larkspur Cres.",
-    street2: "",
-    city: "St. Albert",
-    state: "AB",
-    zip: "t8n2m4",
-    country: "CA",
-    phone: "780-283-9384"
-};
-var fromAddress = {
-    name: "Jon Calhoun",
-    street1: "388 Townsend St",
+//
+// TODO: Take in real to/from addresses from params.
+//
+//
+// Hard coded addresses for now, initial
+// Google Maps Step was just for show :P
+//
+var _fromAddress = {
+    name: "Sean Janis",
+    street1: "699 8th Street",
     city: "San Francisco",
     state: "CA",
     zip: "94107",
-    phone: "415-456-7890"
+    phone: "555-555-5555"
 };
 
-// verify address
-easypost.Address.create(fromAddress, function(err, fromAddress) {
-    fromAddress.verify(function(err, response) {
-        if (err) {
-            console.log('Address is invalid.');
-        } else if (response.message !== undefined && response.message !== null) {
-            console.log('Address is valid but has an issue: ', response.message);
-            var verifiedAddress = response.address;
-        } else {
-            var verifiedAddress = response;
+//
+// Hard coded addresses for now, initial
+// Google Maps Step was just for show :P
+//
+var _toAddress = {
+    name: "John Smith",
+    street1: "1680 University Avenue",
+    city: "Rochester",
+    state: "NY",
+    zip: "14610",
+    phone: "555-555-5555"
+};
+
+//
+// Creates an EasyPost address from the specified
+// address object.
+//
+function createFromAddress(params, resultOutput, callback) {
+    easypost.Address.create(_fromAddress, function(err, fromAddress) {
+        fromAddress.verify(function(err, response) {
+            var verifiedAddress;
+            if (err) {
+                console.log('Address is invalid.');
+            } else if (response.message !== undefined && response.message !== null) {
+                console.log('Address is valid but has an issue: ', response.message);
+                verifiedAddress = response.address;
+            } else {
+                verifiedAddress = response;
+            }
+
+            if (verifiedAddress) {
+                resultOutput.fromAddress = verifiedAddress;
+                callback(null, params, resultOutput);
+            }
+        });
+    });
+}
+
+//
+// Creates an EasyPost address from the specified
+// address object.
+//
+function createToAddress(params, resultOutput, callback) {
+    easypost.Address.create(_toAddress, function(err, fromAddress) {
+        fromAddress.verify(function(err, response) {
+            var verifiedAddress;
+            if (err) {
+                console.log('Address is invalid.');
+            } else if (response.message !== undefined && response.message !== null) {
+                console.log('Address is valid but has an issue: ', response.message);
+                verifiedAddress = response.address;
+            } else {
+                verifiedAddress = response;
+            }
+
+            if (verifiedAddress) {
+                resultOutput.toAddress = verifiedAddress;
+                callback(null, params, resultOutput);
+            }
+        });
+    });
+}
+
+//
+// Creates an EasyPost parcel from the specified
+// dimensions object.
+//
+function createParcel(params, resultOutput, callback) {
+    var parcel = {
+        length: params.packageLength,
+        width: params.packageWidth,
+        height: params.packageHeight,
+        weight: params.packageWeight
+    };
+
+    easypost.Parcel.create(
+        parcel,
+        function(err, response) {
+            resultOutput.parcel = response;
+            callback(null, params, resultOutput);
+       }
+    );
+}
+
+//
+// Creates an EasyPost shipment from the specified
+// data object and figure out the cheapest shipment.
+//
+function createShipment(params, resultOutput, callback) {
+    easypost.Shipment.create({
+        to_address: resultOutput.toAddress.address,
+        from_address: resultOutput.fromAddress.address,
+        parcel: resultOutput.parcel
+    }, function(err, shipment) {
+        resultOutput.shipment = shipment;
+        callback(null, params, resultOutput);
+    });
+}
+
+
+// buy postage label with one of the rate objects
+//        shipment.buy({rate: shipment.lowestRate(['USPS', 'ups'])}, function(err, response) {
+//            console.log(response.tracking_code);
+//            console.log(response.postage_label.label_url);
+//        });
+
+//
+// Queries the best rates for a given dimension package + address
+//
+exports.queryRates = function (request, response, params) {
+    console.log("Querying best address....");
+
+    //
+    // Async's waterfall is a great way to invoke EasyPost's API.
+    // We'll want to first create addresses for the from / to recipient,
+    // then create a parcel (based on package dimensions), then finally
+    // create a shipment. If any of those calls fail, the next one won't
+    // execute.
+    //
+    var data = request.body;
+    var resultOutput = {};
+    var waterfall = [
+        function(callback) {
+            callback(null, data, resultOutput);
+        },
+        createFromAddress,
+        createToAddress,
+        createParcel,
+        createShipment,
+        function(callback) {
+            var bestRateData = computeBestRate(resultOutput.shipment);
+           // console.log("LAST RESPONSE***** "  + JSON.stringify(resultOutput.shipment));
+            response.format({
+                'application/json': function(){
+                    response.send({ shipmentData: bestRateData });
+                }
+            });
         }
-    });
-});
+    ];
 
-// set parcel
-easypost.Parcel.create({
-    predefined_package: "InvalidPackageName",
-    weight: 21.2
-}, function(err, response) {
-    console.log(err);
-});
-
-var parcel = {
-    length: 10.2,
-    width: 7.8,
-    height: 4.3,
-    weight: 21.2
+    async.waterfall(waterfall,
+        function (err, result) {
+            console.log("Waterfall error " + err);
+        }
+    );
 };
 
+//
+// Parses through the shipment object and prepares a
+// ready-to-use data object for populating the UI.
+//
+function computeBestRate(shipmentObj) {
+    var result = {
+        bestRate: 'N/A',
+        bestProvider: 'N/A'
+    };
 
-// create customs_info form for intl shipping
-var customsItem = {
-    description: "EasyPost t-shirts",
-    hs_tariff_number: 123456,
-    origin_country: "US",
-    quantity: 2,
-    value: 96.27,
-    weight: 21.1
-};
+    if (shipmentObj == null) {
+        return result;
+    }
+    var rates = shipmentObj.rates;
+    if (rates == null) {
+        return result;
+    }
 
-var customsInfo = {
-    customs_certify: 1,
-    customs_signer: "Hector Hammerfall",
-    contents_type: "gift",
-    contents_explanation: "",
-    eel_pfc: "NOEEI 30.37(a)",
-    non_delivery_option: "return",
-    restriction_type: "none",
-    restriction_comments: "",
-    customs_items: [customsItem]
-};
+    var rate;
+    var validProviders = ['UPS', 'FedEx', 'USPS'];
+    var lowestRate = 10000000;
+    for (var i = 0; i < rates.length; i++) {
+        rate = rates[i];
+        if (rate == null) {
+            continue;
+        }
 
-// create shipment
-easypost.Shipment.create({
-    to_address: toAddress,
-    from_address: fromAddress,
-    parcel: parcel,
-    customs_info: customsInfo
-}, function(err, shipment) {
-    // buy postage label with one of the rate objects
-    shipment.buy({rate: shipment.lowestRate(['USPS', 'ups'])}, function(err, response) {
-        console.log(response.tracking_code);
-        console.log(response.postage_label.label_url);
-    });
-});
-*/
+        if (rate.rate < lowestRate && (validProviders.indexOf(rate.carrier) >= 0)) {
+            lowestRate = rate.rate;
+            result = rate;
+        }
+    }
+
+    return result;
+}

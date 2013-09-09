@@ -2,14 +2,10 @@
 
 //
 // Shipping Dimensions View Controller
-//
-var _ShipDimensionsCtrl = {};
-//var mainApp = angular.module("app.ship-it-dimensions", ['uiSlider']);
-
-//
 // Main control for handling Step 2 input changes updates
 //
 function ShipDimensionsCtrl($scope, $timeout, $http) {
+    var DEFAULT_NOT_AVAILABLE = "N/A"; // No data available
     var BEST_RATE_LOADING = "Calculating...";
     var BEST_RATE_ERROR = "Service Unavailable."; // API error
     var BEST_SERVICE_LOADING = "...";
@@ -19,18 +15,23 @@ function ShipDimensionsCtrl($scope, $timeout, $http) {
     var _webStorage = $scope._webStorage;
     var _sessionData = _webStorage.get(SESSION_SHIP_VARS);
 
-    // From previous step
-    //var _startAddress = '699 8th Street, San Francisco, CA';
-    //var _endAddress = "2728 San Antonio Drive, Walnut Creek, CA";
-
     // Initial default values
     $scope.valueLength = _sessionData.SESSION_PACKAGE_LENGTH;
     $scope.valueWidth = _sessionData.SESSION_PACKAGE_WIDTH;
     $scope.valueHeight = _sessionData.SESSION_PACKAGE_HEIGHT;
     $scope.valueWeight = _sessionData.SESSION_PACKAGE_WEIGHT;
 
-    $scope.valueBestPrice = "$0.00";
-    $scope.valueBestService = '...';
+    if (_sessionData.SESSION_EASYPOST_SHIPMENT_INFO != null) {
+        $scope.valueBestPrice = _sessionData.SESSION_EASYPOST_SHIPMENT_INFO.rate;
+    } else {
+        $scope.valueBestPrice = DEFAULT_NOT_AVAILABLE;
+    }
+
+    if (_sessionData.SESSION_EASYPOST_SHIPMENT_INFO != null) {
+        $scope.valueBestService = _sessionData.SESSION_EASYPOST_SHIPMENT_INFO.carrier;
+    } else {
+        $scope.valueBestService = DEFAULT_NOT_AVAILABLE;
+    }
 
     //
     // Listeners for when one of the dimension slider fields
@@ -94,11 +95,24 @@ function ShipDimensionsCtrl($scope, $timeout, $http) {
                             valueWidth,
                             valueHeight,
                             valueWeight) {
-        console.log("INVOKING API QUERY ");
-        var data = {};
-
-        _$http.post('/ep_query_rates', data).success(function(data) {
-            console.log("MY RESPONSE DATA " + data);
+        // TODO: Inject real addreses here, right now, Node.js
+        // server just hardcodes to/fromt addresses
+        var shipmentData = {
+            'fromAddress': startAddress,
+            'toAddress': endAddress,
+            'packageLength': valueLength,
+            'packageWidth': valueWidth,
+            'packageHeight': valueHeight,
+            'packageWeight': valueWeight
+        };
+        _$http.post('/ep_query_rates', shipmentData).success(function(data) {
+            console.log("Query best rate " + JSON.stringify(data));
+            if (data.shipmentData) {
+                $scope.valueBestPrice = "$"+data.shipmentData.rate;
+                $scope.valueBestService = data.shipmentData.carrier;
+                _sessionData.SESSION_EASYPOST_SHIPMENT_INFO = data.shipmentData;
+                _webStorage.add(SESSION_SHIP_VARS, _sessionData);
+            }
         });
     }
 }
