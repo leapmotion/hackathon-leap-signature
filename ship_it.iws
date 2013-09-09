@@ -12,7 +12,7 @@
     <file path="/index.html.ejs" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378682722944" ignored="false" />
     <file path="/generate_test_students.php" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1377482130159" ignored="false" />
     <file path="/ship_it.css" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378701994593" ignored="false" />
-    <file path="/c_ship_dimensions.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378717266667" ignored="false" />
+    <file path="/c_ship_dimensions.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378742527237" ignored="false" />
     <file path="/c_ship_label.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378688048984" ignored="false" />
     <file path="/ship_dimensions.html.ejs" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378683612250" ignored="false" />
     <file path="/ship_label.html.ejs" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378683703369" ignored="false" />
@@ -20,12 +20,13 @@
     <file path="/c_ship_address.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378711496208" ignored="false" />
     <file path="/ship_address.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378700030226" ignored="false" />
     <file path="/package.json" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378712458516" ignored="false" />
-    <file path="/server.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378711957456" ignored="false" />
+    <file path="/server.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378739839367" ignored="false" />
     <file path="/routes.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378691138505" ignored="false" />
-    <file path="/directives.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378692149531" ignored="false" />
-    <file path="/ship_dimensions.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378702954423" ignored="false" />
-    <file path="/easypost_wrapper.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378716935210" ignored="false" />
+    <file path="/directives.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378742128925" ignored="false" />
+    <file path="/ship_dimensions.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378738688608" ignored="false" />
+    <file path="/easypost_wrapper.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378742500459" ignored="false" />
     <file path="/app.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378717071833" ignored="false" />
+    <file path="/ship_label.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378742351206" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,10 +87,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="c_ship_address.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_address.js">
+      <file leaf-file-name="ship_label.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/ship/ship_label.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="0" selection-start="4487" selection-end="4487" vertical-scroll-proportion="0.0">
+            <state line="13" column="71" selection-start="527" selection-end="535" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c_ship_label.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_label.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="42" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,7 +108,7 @@
       <file leaf-file-name="c_ship_dimensions.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_dimensions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="42" selection-start="3525" selection-end="3525" vertical-scroll-proportion="1.983471">
+            <state line="184" column="73" selection-start="6228" selection-end="6228" vertical-scroll-proportion="0.8140496">
               <folding />
             </state>
           </provider>
@@ -107,7 +117,7 @@
       <file leaf-file-name="easypost_wrapper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/endpoints/easypost_wrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="84" selection-start="5780" selection-end="5780" vertical-scroll-proportion="0.0">
+            <state line="182" column="29" selection-start="6196" selection-end="6196" vertical-scroll-proportion="-8.961538">
               <folding />
             </state>
           </provider>
@@ -123,10 +133,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/js/angular/controllers/ship/c_ship_address.js" />
         <option value="$PROJECT_DIR$/public/js/angular/routes.js" />
-        <option value="$PROJECT_DIR$/public/js/angular/directives.js" />
         <option value="$PROJECT_DIR$/public/css/ship_it.css" />
         <option value="$PROJECT_DIR$/public/js/angular/lib/angular-webstorage.js" />
         <option value="$PROJECT_DIR$/public/partials/ship/ship_address.html" />
@@ -134,10 +141,13 @@
         <option value="$PROJECT_DIR$/public/js/angular/controllers/controllers.js" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_address.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/public/partials/ship/ship_dimensions.html" />
-        <option value="$PROJECT_DIR$/node/endpoints/easypost_wrapper.js" />
         <option value="$PROJECT_DIR$/public/js/angular/app.js" />
+        <option value="$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_label.js" />
+        <option value="$PROJECT_DIR$/public/partials/ship/ship_dimensions.html" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/public/js/angular/directives.js" />
+        <option value="$PROJECT_DIR$/public/partials/ship/ship_label.html" />
+        <option value="$PROJECT_DIR$/node/endpoints/easypost_wrapper.js" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_dimensions.js" />
       </list>
     </option>
@@ -523,36 +533,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/node-easypost/lib/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/ship_it.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="402" selection-end="420" vertical-scroll-proportion="0.59917355">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/angular/lib/angular-webstorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="616" column="1" selection-start="21935" selection-end="21935" vertical-scroll-proportion="0.9586777">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/ship/ship_address.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -588,25 +568,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/angular/routes.js">
+    <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_address.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="24" column="27" selection-start="715" selection-end="715" vertical-scroll-proportion="-1.983471">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="380" selection-end="380" vertical-scroll-proportion="0.2892562">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/ship/ship_dimensions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="115" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.3701016">
+        <state line="89" column="152" selection-start="3689" selection-end="3689" vertical-scroll-proportion="0.67343974">
           <folding>
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -616,30 +587,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node/endpoints/easypost_wrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="84" selection-start="5780" selection-end="5780" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angular/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="799" selection-end="829" vertical-scroll-proportion="0.45454547">
+        <state line="5" column="11" selection-start="50" selection-end="57" vertical-scroll-proportion="0.10330579">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_address.js">
+    <entry file="file://$PROJECT_DIR$/public/js/angular/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="0" selection-start="4487" selection-end="4487" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="462" selection-end="462" vertical-scroll-proportion="0.3305785">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/node-easypost/lib/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="329" column="35" selection-start="12680" selection-end="12683" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/angular/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="43" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.7107438">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/endpoints/easypost_wrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="29" selection-start="6196" selection-end="6196" vertical-scroll-proportion="-8.961538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/ship/ship_label.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="71" selection-start="527" selection-end="535" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_label.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="42" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_dimensions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="42" selection-start="3525" selection-end="3525" vertical-scroll-proportion="1.983471">
+        <state line="184" column="73" selection-start="6228" selection-end="6228" vertical-scroll-proportion="0.8140496">
           <folding />
         </state>
       </provider>

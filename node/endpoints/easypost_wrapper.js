@@ -10,6 +10,15 @@ var easypost = require('../../node_modules/node-easypost/lib/main.js')(apiKey);
 var async = require('async');
 
 //
+// Quick cache for storing created address data & parcel
+// info. Ideally, we would cache this better, but since we're
+// using hardcoded addresses, we can save some API calls.
+//
+var _CACHE_ADDRESS_INFO = {}; // Keyed by EasyPost address id => address object
+var _CACHE_PARCEL_INFO = {}; // Keyed by EasyPost parcel id => parcel object
+var _CACHE_SHIPMENT_INFO = {}; // Keyed by EasyPost shipment id => shipment object (for buy purchasing)
+
+//
 // TODO: Take in real to/from addresses from params.
 //
 //
@@ -39,28 +48,45 @@ var _toAddress = {
 };
 
 //
+// Creates a quick hash key from the given address object.
+//
+function createAddressHash(address) {
+    var result = address.name + "_" + address.street1 + "_" + address.street2 +
+        "_" + address.city + "_" + address.state + "_" + address.zip + "_" + address.phone;
+    return result;
+}
+
+//
 // Creates an EasyPost address from the specified
 // address object.
 //
 function createFromAddress(params, resultOutput, callback) {
-    easypost.Address.create(_fromAddress, function(err, fromAddress) {
-        fromAddress.verify(function(err, response) {
-            var verifiedAddress;
-            if (err) {
-                console.log('Address is invalid.');
-            } else if (response.message !== undefined && response.message !== null) {
-                console.log('Address is valid but has an issue: ', response.message);
-                verifiedAddress = response.address;
-            } else {
-                verifiedAddress = response;
-            }
+    // Handle cache first
+    var addressHash = createAddressHash(_fromAddress);
+    if (_CACHE_ADDRESS_INFO[addressHash] != null) {
+        resultOutput.fromAddress = _CACHE_ADDRESS_INFO[addressHash];
+        callback(null, params, resultOutput);
+    } else {
+        easypost.Address.create(_fromAddress, function(err, fromAddress) {
+            fromAddress.verify(function(err, response) {
+                var verifiedAddress;
+                if (err) {
+                    console.log('Address is invalid.');
+                } else if (response.message !== undefined && response.message !== null) {
+                    console.log('Address is valid but has an issue: ', response.message);
+                    verifiedAddress = response.address;
+                } else {
+                    verifiedAddress = response;
+                }
 
-            if (verifiedAddress) {
-                resultOutput.fromAddress = verifiedAddress;
-                callback(null, params, resultOutput);
-            }
+                if (verifiedAddress) {
+                    resultOutput.fromAddress = verifiedAddress;
+                    _CACHE_ADDRESS_INFO[addressHash] = verifiedAddress;
+                    callback(null, params, resultOutput);
+                }
+            });
         });
-    });
+    }
 }
 
 //
@@ -68,24 +94,32 @@ function createFromAddress(params, resultOutput, callback) {
 // address object.
 //
 function createToAddress(params, resultOutput, callback) {
-    easypost.Address.create(_toAddress, function(err, fromAddress) {
-        fromAddress.verify(function(err, response) {
-            var verifiedAddress;
-            if (err) {
-                console.log('Address is invalid.');
-            } else if (response.message !== undefined && response.message !== null) {
-                console.log('Address is valid but has an issue: ', response.message);
-                verifiedAddress = response.address;
-            } else {
-                verifiedAddress = response;
-            }
+    // Handle cache first
+    var addressHash = createAddressHash(_toAddress);
+    if (_CACHE_ADDRESS_INFO[addressHash] != null) {
+        resultOutput.toAddress = _CACHE_ADDRESS_INFO[addressHash];
+        callback(null, params, resultOutput);
+    } else {
+        easypost.Address.create(_toAddress, function(err, fromAddress) {
+            fromAddress.verify(function(err, response) {
+                var verifiedAddress;
+                if (err) {
+                    console.log('Address is invalid.');
+                } else if (response.message !== undefined && response.message !== null) {
+                    console.log('Address is valid but has an issue: ', response.message);
+                    verifiedAddress = response.address;
+                } else {
+                    verifiedAddress = response;
+                }
 
-            if (verifiedAddress) {
-                resultOutput.toAddress = verifiedAddress;
-                callback(null, params, resultOutput);
-            }
+                if (verifiedAddress) {
+                    resultOutput.toAddress = verifiedAddress;
+                    _CACHE_ADDRESS_INFO[addressHash] = verifiedAddress;
+                    callback(null, params, resultOutput);
+                }
+            });
         });
-    });
+    }
 }
 
 //
@@ -100,13 +134,20 @@ function createParcel(params, resultOutput, callback) {
         weight: params.packageWeight
     };
 
-    easypost.Parcel.create(
-        parcel,
-        function(err, response) {
-            resultOutput.parcel = response;
-            callback(null, params, resultOutput);
-       }
-    );
+    var parcelHash = parcel.length + "_" + parcel.width + "_" + parcel.height + "_" + parcel.weight;
+    if (_CACHE_PARCEL_INFO[parcelHash] != null) {
+        resultOutput.parcel = _CACHE_PARCEL_INFO[parcelHash];
+        callback(null, params, resultOutput);
+    } else {
+        easypost.Parcel.create(
+            parcel,
+            function(err, response) {
+                resultOutput.parcel = response;
+                _CACHE_PARCEL_INFO[parcelHash] = response;
+                callback(null, params, resultOutput);
+            }
+        );
+    }
 }
 
 //
@@ -119,17 +160,44 @@ function createShipment(params, resultOutput, callback) {
         from_address: resultOutput.fromAddress.address,
         parcel: resultOutput.parcel
     }, function(err, shipment) {
+        _CACHE_SHIPMENT_INFO[shipment.id] = shipment;
         resultOutput.shipment = shipment;
         callback(null, params, resultOutput);
     });
 }
 
-
-// buy postage label with one of the rate objects
-//        shipment.buy({rate: shipment.lowestRate(['USPS', 'ups'])}, function(err, response) {
-//            console.log(response.tracking_code);
-//            console.log(response.postage_label.label_url);
-//        });
+//
+// Buys a given shipment
+// TODO: Current EasyPost API is not returning a reason why
+// this call fails, need to debug further.
+//
+exports.purchaseLabel = function (request, response, params) {
+    var shipmentData = request.body;
+    var cachedShipmentObj = _CACHE_SHIPMENT_INFO[shipmentData.shipment_id];
+    if (cachedShipmentObj != null) {
+        var bestRates = computeBestRate(cachedShipmentObj);
+        cachedShipmentObj.buy([bestRates.carrier], function(err, newResponse) {
+            // TODO: Fix why EasyPost buying is not working?
+            //console.log(response.tracking_code);
+            //console.log(response.postage_label.label_url);
+            response.format({
+                'application/json': function(){
+                    response.send({ label: {
+                        'tracking_code': response.tracking_code,
+                        'label_url': response.label_url
+                    } });
+                }
+            });
+        })
+    } else {
+        // Error
+        response.format({
+            'application/json': function(){
+                response.send({ label: {} });
+            }
+        });
+    }
+}
 
 //
 // Queries the best rates for a given dimension package + address
@@ -156,7 +224,6 @@ exports.queryRates = function (request, response, params) {
         createShipment,
         function(callback) {
             var bestRateData = computeBestRate(resultOutput.shipment);
-           // console.log("LAST RESPONSE***** "  + JSON.stringify(resultOutput.shipment));
             response.format({
                 'application/json': function(){
                     response.send({ shipmentData: bestRateData });
@@ -193,14 +260,16 @@ function computeBestRate(shipmentObj) {
     var rate;
     var validProviders = ['UPS', 'FedEx', 'USPS'];
     var lowestRate = 10000000;
+    var tempRateFloat = 0;
     for (var i = 0; i < rates.length; i++) {
         rate = rates[i];
         if (rate == null) {
             continue;
         }
 
-        if (rate.rate < lowestRate && (validProviders.indexOf(rate.carrier) >= 0)) {
-            lowestRate = rate.rate;
+        tempRateFloat = parseFloat(rate.rate);
+        if (tempRateFloat < lowestRate && (validProviders.indexOf(rate.carrier) >= 0)) {
+            lowestRate = tempRateFloat;
             result = rate;
         }
     }

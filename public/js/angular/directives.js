@@ -5,7 +5,7 @@
 // Borrowed method to add a directive for going directly
 // to a partial's page.
 //
-mainApp.directive( 'linkClick', function ($location) {
+mainApp.directive('linkClick', function ($location) {
     return function(scope, element, attrs) {
         var path;
 
@@ -14,6 +14,50 @@ mainApp.directive( 'linkClick', function ($location) {
         });
 
         element.bind('click', function () {
+            scope.$apply( function () {
+                $location.path(path);
+            });
+        });
+    };
+});
+
+//
+// Borrowed method to add a directive for going directly
+// to a partial's page.
+//
+mainApp.directive('linkClickBuyLabel', function ($location) {
+    return function(scope, element, attrs) {
+        var path;
+
+        attrs.$observe('linkClickBuyLabel', function (val) {
+            path = val;
+        });
+
+        element.bind('click', function () {
+            purchaseShippingLabel();
+
+            scope.$apply( function () {
+                $location.path(path);
+            });
+        });
+    };
+});
+
+//
+// Borrowed method to add a directive for going directly
+// to a partial's page.
+//
+mainApp.directive('linkClickPrintLabel', function ($location) {
+    return function(scope, element, attrs) {
+        var path;
+
+        attrs.$observe('linkClickPrintLabel', function (val) {
+            path = val;
+        });
+
+        element.bind('click', function () {
+            window.print();
+
             scope.$apply( function () {
                 $location.path(path);
             });
