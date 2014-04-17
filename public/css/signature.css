@@ -42,6 +42,21 @@ hr {
     height: 2px;
 }
 
+.div-center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.form-start {
+  width: 80%;
+  max-width: 550px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
 .form-address {
   width: 80%;
   max-width: 550px;

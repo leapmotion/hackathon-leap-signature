@@ -3,7 +3,7 @@
 //
 // Main app module setup
 //
-var mainApp = angular.module("app.ship-it", ['webStorageModule']);
+var mainApp = angular.module("app.leap-signature", ['webStorageModule']);
 
 //
 // Session Variable Constants
