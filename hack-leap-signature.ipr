@@ -172,7 +172,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ship_it.iml" filepath="$PROJECT_DIR$/ship_it.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hack-leap-signature.iml" filepath="$PROJECT_DIR$/hack-leap-signature.iml" />
     </modules>
   </component>
   <component name="ProjectResources">

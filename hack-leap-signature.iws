@@ -16,7 +16,7 @@
     <file path="/c_ship_label.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378688048984" ignored="false" />
     <file path="/ship_dimensions.html.ejs" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378683612250" ignored="false" />
     <file path="/ship_label.html.ejs" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378683703369" ignored="false" />
-    <file path="/index.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397768013679" ignored="false" />
+    <file path="/index.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378707811932" ignored="false" />
     <file path="/c_ship_address.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378711496208" ignored="false" />
     <file path="/ship_address.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378700030226" ignored="false" />
     <file path="/package.json" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378712458516" ignored="false" />
@@ -28,7 +28,6 @@
     <file path="/app.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378717071833" ignored="false" />
     <file path="/ship_label.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378742351206" ignored="false" />
     <file path="/README.md" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397767873323" ignored="false" />
-    <file path="/*.regexp" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397767970947" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,19 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="86" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="36" selection-start="854" selection-end="854" vertical-scroll-proportion="0.43307087">
+            <state line="9" column="18" selection-start="143" selection-end="143" vertical-scroll-proportion="0.16423358">
               <folding />
             </state>
           </provider>
@@ -138,6 +128,15 @@
         <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_label.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="42" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c_ship_dimensions.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_dimensions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="184" column="73" selection-start="6228" selection-end="6228" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,6 +191,7 @@
         <option value="$PROJECT_DIR$/public/css/ship_it.css" />
         <option value="$PROJECT_DIR$/public/js/angular/lib/angular-webstorage.js" />
         <option value="$PROJECT_DIR$/public/partials/ship/ship_address.html" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/controllers.js" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/ship/c_ship_address.js" />
         <option value="$PROJECT_DIR$/public/js/angular/app.js" />
@@ -204,7 +204,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -271,20 +270,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hack-leap-signature" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ship_it" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hack-leap-signature" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,12 +401,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-217" y="-1178" width="1835" height="970" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23365009" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -435,11 +419,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14980435" sideWeight="0.6706507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14980435" sideWeight="0.6706507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23385939" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Colour Chooser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -508,6 +493,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="6" selection-start="1473" selection-end="1542" vertical-scroll-proportion="0.69521046" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.39256197" />
@@ -598,14 +588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="86" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="36" selection-start="854" selection-end="854" vertical-scroll-proportion="0.43307087">
+        <state line="9" column="18" selection-start="143" selection-end="143" vertical-scroll-proportion="0.16423358">
           <folding />
         </state>
       </provider>

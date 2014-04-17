@@ -1,5 +1,5 @@
 {
-  "name": "ship_it",
+  "name": "hack-leap-signature",
   "version": "0.0.1-6",
   "author": "",
   "dependencies": {
@@ -9,9 +9,9 @@
   },
   "devDependencies": {},
   "engines": {
-    "node": "0.8.x"
+    "node": "0.10.26"
   },
-  "subdomain": "ship_it",
+  "subdomain": "hack-leap-signature",
   "scripts": {
     "start": "server.js"
   }

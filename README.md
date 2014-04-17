@@ -1,17 +1,13 @@
-ship_it
+Leap Signature
 ==============
 
-AngularJS-based shipments page
+AngularJS-based Signature project
 
 ## Quick start
 
 To run the app (run from main directory):
 
 * > node server.js
-
-To deploy:
-
-* > jitsu deploy
 
 ## Helpful hints
 
