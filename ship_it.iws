@@ -144,7 +144,7 @@
       <file leaf-file-name="create_name_ctrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="65" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0952986">
+            <state line="26" column="1" selection-start="434" selection-end="434" vertical-scroll-proportion="0.49555272">
               <folding />
             </state>
           </provider>
@@ -823,7 +823,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="65" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0952986">
+        <state line="26" column="1" selection-start="434" selection-end="434" vertical-scroll-proportion="0.49555272">
           <folding />
         </state>
       </provider>

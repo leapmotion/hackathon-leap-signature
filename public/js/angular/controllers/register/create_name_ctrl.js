@@ -24,3 +24,4 @@ RegisterCreateNameCtrl.$inject = ['$scope', '$timeout', '$location'];
 
 
 
+ 
