@@ -9,8 +9,9 @@
   },
   "devDependencies": {},
   "engines": {
-    "node": "0.10.26"
+    "node": "0.10.x"
   },
+  "main": "server.js",
   "subdomain": "hack-leap-signature",
   "scripts": {
     "start": "server.js"

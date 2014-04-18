@@ -16,5 +16,7 @@ app.configure(function () {
     app.post('/ep_query_rates', epw.queryRates);
     app.post('/ep_purchase_label', epw.purchaseLabel);
 });
-app.listen(process.env.PORT || 1065);
+
+var port = Number(process.env.PORT || 1065);
+app.listen(port);
 console.log("Server running on: http://localhost:1065/");
