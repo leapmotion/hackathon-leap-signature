@@ -141,11 +141,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_name_ctrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="create_name_ctrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="1" selection-start="434" selection-end="434" vertical-scroll-proportion="0.49555272">
+            <state line="19" column="69" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="56" selection-start="583" selection-end="583" vertical-scroll-proportion="0.3621347">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/partials/signature/start.html" />
         <option value="$PROJECT_DIR$/public/partials/register/success.html" />
         <option value="$PROJECT_DIR$/public/js/angular/routes.js" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/welcome_ctrl.js" />
@@ -185,6 +195,7 @@
         <option value="$PROJECT_DIR$/public/partials/register/create_name.html" />
         <option value="$PROJECT_DIR$/public/js/angular/directives.js" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -716,13 +727,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/partials/register/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/register/success_ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="19" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
@@ -823,8 +827,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="434" selection-end="434" vertical-scroll-proportion="0.49555272">
+        <state line="19" column="69" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="56" selection-start="583" selection-end="583" vertical-scroll-proportion="0.3621347">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
