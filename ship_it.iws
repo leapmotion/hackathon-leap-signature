@@ -28,21 +28,21 @@
     <file path="/app.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378717071833" ignored="false" />
     <file path="/ship_label.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1378742351206" ignored="false" />
     <file path="/README.md" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397767873323" ignored="false" />
-    <file path="/*.regexp" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397779390675" ignored="false" />
+    <file path="/*.regexp" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397836411960" ignored="false" />
     <file path="/c_signature_1.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397769299113" ignored="false" />
     <file path="/step_1.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397777585855" ignored="false" />
     <file path="/c_step_4.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397772138513" ignored="false" />
     <file path="/c_step_2.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397772156712" ignored="false" />
     <file path="/c_step_1.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397777339973" ignored="false" />
     <file path="/signature.css" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397782286534" ignored="false" />
-    <file path="/create_signature.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397783137553" ignored="false" />
-    <file path="/create_name.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397782589792" ignored="false" />
+    <file path="/create_signature.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397835962726" ignored="false" />
+    <file path="/create_name.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397836608042" ignored="false" />
     <file path="/success.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397778630741" ignored="false" />
     <file path="/welcome_ctrl.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397778715609" ignored="false" />
-    <file path="/welcome.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397779785387" ignored="false" />
-    <file path="/sign_in.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397782522479" ignored="false" />
+    <file path="/welcome.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397836195962" ignored="false" />
+    <file path="/sign_in.html" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397835700733" ignored="false" />
     <file path="/create_signature_ctrl.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397778769975" ignored="false" />
-    <file path="/create_name_ctrl.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397778777166" ignored="false" />
+    <file path="/create_name_ctrl.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397837734171" ignored="false" />
     <file path="/success_ctrl.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397778796512" ignored="false" />
     <file path="/sign_in_ctrl.js" changelist="9897e636-32e6-4446-9ac6-d1b4c99e18b9" time="1397778814842" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -105,37 +105,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/angular/routes.js">
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/angular/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="87" selection-start="852" selection-end="852" vertical-scroll-proportion="-2.7272727">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="start.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/start.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="79" selection-start="333" selection-end="340" vertical-scroll-proportion="-6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signature.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/signature.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.5868263">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome_ctrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/welcome_ctrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="15" selection-start="75" selection-end="86" vertical-scroll-proportion="0.0">
+            <state line="16" column="12" selection-start="367" selection-end="448" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,7 +126,7 @@
       <file leaf-file-name="create_signature.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/partials/register/create_signature.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-3.125">
+            <state line="21" column="61" selection-start="862" selection-end="862" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -162,16 +135,16 @@
       <file leaf-file-name="create_name.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/partials/register/create_name.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="38" selection-start="217" selection-end="217" vertical-scroll-proportion="-4.375">
+            <state line="11" column="92" selection-start="365" selection-end="379" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign_in.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/existing/sign_in.html">
+      <file leaf-file-name="create_name_ctrl.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="12" selection-start="354" selection-end="354" vertical-scroll-proportion="-8.125">
+            <state line="5" column="65" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0952986">
               <folding />
             </state>
           </provider>
@@ -180,16 +153,7 @@
       <file leaf-file-name="welcome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/partials/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="-6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sign_in_ctrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/existing/sign_in_ctrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+            <state line="7" column="38" selection-start="193" selection-end="193" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -205,31 +169,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/angular/controllers/signature/c_step_1.js" />
         <option value="$PROJECT_DIR$/public/partials/signature/start.html" />
         <option value="$PROJECT_DIR$/public/partials/register/success.html" />
         <option value="$PROJECT_DIR$/public/js/angular/routes.js" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/welcome_ctrl.js" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/register/create_signature_ctrl.js" />
-        <option value="$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/register/success_ctrl.js" />
         <option value="$PROJECT_DIR$/public/js/angular/controllers/existing/sign_in_ctrl.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/partials/welcome.html" />
         <option value="$PROJECT_DIR$/public/partials/start.html" />
-        <option value="$PROJECT_DIR$/public/partials/existing/sign_in.html" />
-        <option value="$PROJECT_DIR$/public/partials/register/create_name.html" />
-        <option value="$PROJECT_DIR$/public/partials/register/create_signature.html" />
         <option value="$PROJECT_DIR$/public/css/signature.css" />
+        <option value="$PROJECT_DIR$/public/partials/existing/sign_in.html" />
+        <option value="$PROJECT_DIR$/public/partials/register/create_signature.html" />
+        <option value="$PROJECT_DIR$/public/partials/welcome.html" />
+        <option value="$PROJECT_DIR$/public/partials/register/create_name.html" />
+        <option value="$PROJECT_DIR$/public/js/angular/directives.js" />
+        <option value="$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-252" />
-    <option name="y" value="-1176" />
+    <option name="y" value="-1178" />
     <option name="width" value="1887" />
-    <option name="height" value="983" />
+    <option name="height" value="935" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -659,7 +623,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-252" y="-1176" width="1887" height="983" extended-state="0" />
+    <frame x="-252" y="-1178" width="1887" height="935" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -752,23 +716,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="46" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/register/success.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -787,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/angular/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="87" selection-start="852" selection-end="852" vertical-scroll-proportion="-2.7272727">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/vendor/leap-0.4.3.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="89" selection-start="64267" selection-end="64267" vertical-scroll-proportion="0.03649635">
@@ -808,37 +751,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/start.html">
+    <entry file="file://$PROJECT_DIR$/public/partials/existing/sign_in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="79" selection-start="333" selection-end="340" vertical-scroll-proportion="-6.875">
+        <state line="11" column="47" selection-start="328" selection-end="328" vertical-scroll-proportion="0.21625164">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/existing/sign_in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="354" selection-end="354" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/register/create_name.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="38" selection-start="217" selection-end="217" vertical-scroll-proportion="-4.375">
+        <state line="7" column="38" selection-start="193" selection-end="193" vertical-scroll-proportion="-4.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/welcome_ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="75" selection-end="86" vertical-scroll-proportion="0.0">
+        <state line="5" column="15" selection-start="75" selection-end="86" vertical-scroll-proportion="0.0952986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/signature.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.62261754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="79" selection-start="333" selection-end="340" vertical-scroll-proportion="0.21625164">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/angular/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="87" selection-start="852" selection-end="852" vertical-scroll-proportion="0.1905972">
           <folding />
         </state>
       </provider>
@@ -852,14 +802,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/register/create_signature.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-3.125">
+        <state line="21" column="61" selection-start="862" selection-end="862" vertical-scroll-proportion="-13.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/signature.css">
+    <entry file="file://$PROJECT_DIR$/public/partials/register/create_name.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.5868263">
+        <state line="11" column="92" selection-start="365" selection-end="379" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/angular/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="12" selection-start="367" selection-end="448" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/angular/controllers/register/create_name_ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="65" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0952986">
           <folding />
         </state>
       </provider>
